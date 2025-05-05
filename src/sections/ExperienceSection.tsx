@@ -57,7 +57,7 @@ export default function ExperienceSection() {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, margin: "-50px" }}
-        className="max-w-4xl mx-auto"
+        className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8"
       >
         <div className="space-y-12">
           {experiences.map((exp, index) => (

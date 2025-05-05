@@ -56,14 +56,14 @@ export default function HeroSection() {
       </motion.div>
 
       {/* Main Content */}
-      <div className="flex-1 flex flex-col items-center justify-center text-center relative z-10 pb-16">
+      <div className="flex-1 flex flex-col items-center justify-center text-center relative z-10 px-4 py-16 sm:px-6 lg:px-8">
         <motion.div
           variants={scaleInVariants}
           initial="hidden"
           animate="visible"
           transition={{ type: "spring", damping: 30, stiffness: 200 }}
         >
-          <h1 className="text-4xl sm:text-6xl font-bold mb-6 text-gray-900 dark:text-white">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 sm:mb-6 text-gray-900 dark:text-white">
             Hi, I'm{' '}
             <span className="text-blue-600 dark:text-blue-500">
               <TypeAnimation
@@ -96,7 +96,7 @@ export default function HeroSection() {
             damping: 25,
             stiffness: 200
           }}
-          className="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl"
+          className="text-base sm:text-lg text-gray-600 dark:text-gray-300 mb-6 sm:mb-8 max-w-2xl px-4"
         >
           Building robust web applications with modern technologies
         </motion.p>

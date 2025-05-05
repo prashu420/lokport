@@ -13,7 +13,7 @@ export default function AboutSection() {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, margin: "-50px" }}
-        className="grid md:grid-cols-2 gap-8 items-center"
+        className="grid md:grid-cols-2 gap-8 items-center px-4 sm:px-6 lg:px-8"
       >
         <motion.div
           initial={{ opacity: 0, x: -50 }}
@@ -23,7 +23,7 @@ export default function AboutSection() {
         >
           <div className="space-y-4">
             <motion.p 
-              className="text-lg text-gray-600 dark:text-gray-300"
+              className="text-base sm:text-lg text-gray-600 dark:text-gray-300 px-4 sm:px-0"
               variants={{
                 hidden: { opacity: 0, y: 20 },
                 visible: { opacity: 1, y: 0 }
@@ -32,7 +32,7 @@ export default function AboutSection() {
               Dynamic software developer with 3 years of experience in ASP.Net and ASP.Net Core, proficient in Web APIs, MVC, and familiar with React. Recently expanded into front-end development with Next.js and TypeScript, as showcased by this portfolio.
             </motion.p>
             <motion.p 
-              className="text-lg text-gray-600 dark:text-gray-300"
+              className="text-base sm:text-lg text-gray-600 dark:text-gray-300 px-4 sm:px-0"
               variants={{
                 hidden: { opacity: 0, y: 20 },
                 visible: { opacity: 1, y: 0, transition: { delay: 0.2 } }
