@@ -14,8 +14,8 @@ export default function AnimatedSection({ children, className = '', delay = 0.2,
   const ref = useRef(null);
   const isInView = useInView(ref, { 
     once: true, 
-    margin: "-20%",
-    amount: 0.3 // Controls how much of the element should be visible before triggering
+    margin: "-10%", // Adjusted margin for better mobile detection
+    amount: 0.1 // Adjusted amount for better mobile detection
   });
 
   return (
